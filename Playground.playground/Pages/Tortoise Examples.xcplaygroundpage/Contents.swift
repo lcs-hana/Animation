@@ -116,5 +116,26 @@ turtle.left(by: 60)
 turtle.forward(steps: 60)
 turtle.left(by: 60)
 
+// Draw a polygon with "n" sides
+func drawPolygon(withSides n: Int, withLength l: Int) {
+    
+    let exteriorAngle: Degrees = 360.0 / Degrees(n)
+    for _ in 1...n {
+        turtle.forward(steps: l)
+        turtle.left(by: exteriorAngle)
+    }
+    
+}
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 300, y: 200))
+turtle.penDown()
+
+drawPolygon(withSides: 3, withLength: 45)
 
 
+turtle.penUp()
+turtle.setPosition(to: Point(x: 300, y: 300))
+turtle.penDown()
+
+drawPolygon(withSides: 9, withLength: 70)

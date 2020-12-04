@@ -38,14 +38,14 @@ To use the Tortoise abstraction, just create an instance of the Tortoise class, 
 let turtle = Tortoise(drawingUpon: canvas)
 
 
-//draw a triangle
+//Draw a triangle
 turtle.forward(steps: 60)
 turtle.left(by: 120)
 
 turtle.forward(steps: 60)
 turtle.left(by: 120)
 
-//turtle.drawSelf()
+//turtle.drawSelf() To know where the tirtle is
 
 turtle.forward(steps: 60)
 turtle.left(by: 120)
@@ -55,3 +55,66 @@ turtle.left(by: 120)
 turtle.penUp()
 turtle.forward(steps: 100)
 turtle.penDown()
+
+//Draw a square
+turtle.forward(steps: 50)
+turtle.left(by: 90)
+
+turtle.forward(steps: 50)
+turtle.left(by: 90)
+
+turtle.forward(steps: 50)
+turtle.left(by: 90)
+
+turtle.forward(steps: 50)
+turtle.left(by: 90)
+
+
+turtle.penUp()
+turtle.forward(steps: 100)
+turtle.penDown()
+
+//Draw pentagon
+turtle.forward(steps: 60)
+turtle.left(by: 72)
+
+turtle.forward(steps: 60)
+turtle.left(by: 72)
+
+turtle.forward(steps: 60)
+turtle.left(by: 72)
+
+turtle.forward(steps: 60)
+turtle.left(by: 72)
+
+turtle.forward(steps: 60)
+turtle.left(by: 72)
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+
+//Hexagon
+turtle.forward(steps: 60)
+turtle.left(by: 60)
+
+turtle.forward(steps: 60)
+turtle.left(by: 60)
+
+turtle.forward(steps: 60)
+turtle.left(by: 60)
+
+turtle.forward(steps: 60)
+turtle.left(by: 60)
+
+turtle.forward(steps: 60)
+turtle.left(by: 60)
+
+turtle.forward(steps: 60)
+turtle.left(by: 60)
+
+turtle.forward(steps: 60)
+turtle.left(by: 60)
+
+
+

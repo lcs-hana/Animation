@@ -1,5 +1,5 @@
 //: [Previous](@previous) / [Next](@next)
-//: # Tortoise Examples
+//: # Abstract Art
 //:
 //: The `CanvasGraphics` framework also allows you to draw using a "LOGO turtle" metaphor.
 //:
@@ -37,6 +37,9 @@ To use the Tortoise abstraction, just create an instance of the Tortoise class, 
 // Create a turtle that will draw upon the canvas
 let turtle = Tortoise(drawingUpon: canvas)
 
+
+// Turn on high performance mode
+canvas.highPerformance = false
 
 //Draw a triangle
 turtle.forward(steps: 60)
@@ -132,9 +135,62 @@ turtle.setPosition(to: Point(x: 300, y: 200))
 turtle.penDown()
 
 // Draw 10 pentagons
-for _ in 1...10 {
+//for _ in 1...10 {
     
-    drawPolygon(withSides: 5, withLength: 75)
-    turtle.left(by: 360.0 / 10.00)
+ //   drawPolygon(withSides: 5, withLength: 75)
+    //turtle.left(by: 360.0 / 10.00)
+    
+//}
+
+turtle.penUp()
+turtle.forward(steps: 70)
+turtle.penDown()
+
+for _ in 1...23 {
+    
+    drawPolygon(withSides: 3, withLength: 93)
+    turtle.left(by: 360.0/23.00)
     
 }
+
+turtle.penUp()
+turtle.forward(steps: 170)
+turtle.penDown()
+
+for _ in 1...18 {
+    
+    drawPolygon(withSides: 8, withLength: 26)
+    turtle.left(by: 360.0/18.00)
+}
+
+//turtle.penUp()
+//turtle.forward(steps: )
+//turtle.penDown()
+
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 144, y: 185))
+turtle.forward(steps: 170)
+turtle.penDown()
+
+for _ in 1...18 {
+    
+    drawPolygon(withSides: 12, withLength: 26)
+    turtle.left(by: 360.0/18.00)
+}
+
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 25, y: 36))
+turtle.forward(steps: 170)
+turtle.penDown()
+
+for _ in 1...14 {
+    
+    drawPolygon(withSides: 3, withLength: 4)
+    turtle.left(by: 360.0/14.00)
+}
+
+// Turn off high performance mode
+canvas.highPerformance = false
+turtle.left(by: 90)

@@ -38,7 +38,7 @@ To use the Tortoise abstraction, just create an instance of the Tortoise class, 
 let turtle = Tortoise(drawingUpon: canvas)
 
 
-canvas.highPerformance = false
+canvas.highPerformance = true
 
 
 // Draw a polygon with "n" sides
@@ -232,141 +232,63 @@ turtle.left(by: 90)
 
 turtle.endFill()
 
-//flower 2
-turtle.penUp()
-turtle.setPosition(to: Point(x:450, y: 100))
-turtle.penDown()
 
-turtle.setFillColor(to:Color(hue: 40, saturation: 80, brightness: 100, alpha: 100) )
-turtle.beginFill()
-for _ in 1...13 {
-    
-    drawPolygon(withSides: 8, withLength: 8)
-    turtle.left(by: 360.0 / 13.00)
+func drawFlower(startAtX: Int, whatHue: Int) {
+
+    turtle.penUp()
+    turtle.setPosition(to: Point(x:startAtX, y: 100))
+    turtle.penDown()
+
+    turtle.setFillColor(to:Color(hue: whatHue, saturation: 80, brightness: 100, alpha: 100) )
+    turtle.beginFill()
+    for _ in 1...13 {
+        
+        drawPolygon(withSides: 8, withLength: 8)
+        turtle.left(by: 360.0 / 13.00)
+        
+    }
+
+    turtle.endFill()
+
+    // Stem
+    turtle.penUp()
+    turtle.setPosition(to: Point(x:startAtX, y: 0))
+    turtle.penDown()
+
+    turtle.setFillColor(to:Color(hue: 120, saturation: 100, brightness: 100, alpha: 100) )
+    turtle.beginFill()
+
+    turtle.forward(steps: 5)
+    turtle.left(by: 90)
+    turtle.forward(steps: 80)
+    turtle.left(by: 90)
+    turtle.forward(steps: 5)
+    turtle.left(by: 90)
+    turtle.forward(steps: 80)
+    turtle.left(by: 90)
+
+    turtle.endFill()
     
 }
 
-turtle.endFill()
-
-turtle.penUp()
-turtle.setPosition(to: Point(x:450, y: 0))
-turtle.penDown()
-
-turtle.setFillColor(to:Color(hue: 120, saturation: 100, brightness: 100, alpha: 100) )
-turtle.beginFill()
-
-turtle.forward(steps: 5)
-turtle.left(by: 90)
-turtle.forward(steps: 80)
-turtle.left(by: 90)
-turtle.forward(steps: 5)
-turtle.left(by: 90)
-turtle.forward(steps: 80)
-turtle.left(by: 90)
-
-turtle.endFill()
+//flower 2
+drawFlower(startAtX: 450, whatHue: 40)
 
 //flower 3
-turtle.penUp()
-turtle.setPosition(to: Point(x:350, y: 100))
-turtle.penDown()
+drawFlower(startAtX: 350, whatHue: 20)
 
-turtle.setFillColor(to:Color(hue: 20, saturation: 80, brightness: 100, alpha: 100) )
-turtle.beginFill()
-for _ in 1...13 {
-    
-    drawPolygon(withSides: 8, withLength: 8)
-    turtle.left(by: 360.0 / 13.00)
-    
-}
 
-turtle.endFill()
+// Mr. Gordon's flower
+drawFlower(startAtX: 500, whatHue: 280)
 
-turtle.penUp()
-turtle.setPosition(to: Point(x:350, y: 0))
-turtle.penDown()
-
-turtle.setFillColor(to:Color(hue: 120, saturation: 100, brightness: 100, alpha: 100) )
-turtle.beginFill()
-
-turtle.forward(steps: 5)
-turtle.left(by: 90)
-turtle.forward(steps: 80)
-turtle.left(by: 90)
-turtle.forward(steps: 5)
-turtle.left(by: 90)
-turtle.forward(steps: 80)
-turtle.left(by: 90)
-
-turtle.endFill()
 
 //flower 4
-turtle.penUp()
-turtle.setPosition(to: Point(x:300, y: 100))
-turtle.penDown()
+drawFlower(startAtX: 300, whatHue: 10)
 
-turtle.setFillColor(to:Color(hue: 10, saturation: 80, brightness: 100, alpha: 100) )
-turtle.beginFill()
-for _ in 1...13 {
-    
-    drawPolygon(withSides: 8, withLength: 8)
-    turtle.left(by: 360.0 / 13.00)
-    
-}
-
-turtle.endFill()
-
-turtle.penUp()
-turtle.setPosition(to: Point(x:300, y: 0))
-turtle.penDown()
-
-turtle.setFillColor(to:Color(hue: 120, saturation: 100, brightness: 100, alpha: 100) )
-turtle.beginFill()
-
-turtle.forward(steps: 5)
-turtle.left(by: 90)
-turtle.forward(steps: 80)
-turtle.left(by: 90)
-turtle.forward(steps: 5)
-turtle.left(by: 90)
-turtle.forward(steps: 80)
-turtle.left(by: 90)
-
-turtle.endFill()
 
 //flower 5
-turtle.penUp()
-turtle.setPosition(to: Point(x:20, y: 100))
-turtle.penDown()
+drawFlower(startAtX: 20, whatHue: 60)
 
-turtle.setFillColor(to:Color(hue: 60, saturation: 80, brightness: 100, alpha: 100) )
-turtle.beginFill()
-for _ in 1...13 {
-    
-    drawPolygon(withSides: 8, withLength: 8)
-    turtle.left(by: 360.0 / 13.00)
-    
-}
-
-turtle.endFill()
-
-turtle.penUp()
-turtle.setPosition(to: Point(x:20, y: 0))
-turtle.penDown()
-
-turtle.setFillColor(to:Color(hue: 120, saturation: 100, brightness: 100, alpha: 100) )
-turtle.beginFill()
-
-turtle.forward(steps: 5)
-turtle.left(by: 90)
-turtle.forward(steps: 80)
-turtle.left(by: 90)
-turtle.forward(steps: 5)
-turtle.left(by: 90)
-turtle.forward(steps: 80)
-turtle.left(by: 90)
-
-turtle.endFill()
 
 canvas.highPerformance = false
 turtle.penUp()

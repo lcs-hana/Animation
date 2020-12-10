@@ -63,6 +63,8 @@ func drawTwoSmallCircles() {
     turtle.forward(steps: 30)
     turtle.penDown()
     drawPolygon(withSides: 30, withLength: 1)
+    
+    
 }
 
 func upAndLeft() {
@@ -74,7 +76,7 @@ func upAndLeft() {
     turtle.left(by: 90)
     turtle.forward(steps: 20)
     turtle.left(by: 180)
-
+ 
 }
 
 // Draw some circles in a group
@@ -89,9 +91,109 @@ upAndLeft()
 turtle.penDown()
 drawPolygon(withSides: 30, withLength: 1)
 
+drawTwoSmallCircles()
+upAndLeft()
+turtle.penDown()
+drawPolygon(withSides: 30, withLength: 1)
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 200, y: 200))
+
+//draw a triangle
+func drawTriangle() {
+    
+    turtle.penDown()
+    turtle.forward(steps: 60)
+    turtle.left(by: 120)
+
+    turtle.forward(steps: 60)
+    turtle.left(by: 120)
+    
+    turtle.forward(steps: 60)
+    turtle.left(by: 120)
+    
+}
+
+
+drawTriangle()
+
+
 
 
 // Turn off high performance to see the result
 canvas.highPerformance = false
 turtle.penUp()
+
+//draw a small traingle
+func drawSmallTriangle () {
+    
+    turtle.penDown()
+    turtle.forward(steps: 40)
+    turtle.left(by: 120)
+    
+    turtle.forward(steps: 40)
+    turtle.left(by: 120)
+    
+    turtle.forward(steps: 40)
+    turtle.left(by: 120)
+    
+}
+
+turtle.setPosition(to: Point(x: 210, y: 205))
+drawSmallTriangle()
+turtle.penUp()
+
+
+
+//two diffrent size of circle
+func drawTwoCircles() {
+    
+    turtle.penDown()
+    drawPolygon(withSides: 30, withLength: 1)
+    turtle.penUp()
+    turtle.forward(steps: 20)
+    turtle.penDown()
+    drawPolygon(withSides: 20, withLength: 1)
+
+}
+
+ 
+// Draw a column of circles
+turtle.setPosition(to: Point(x: 300, y: 200))
+drawTwoCircles()
+upAndLeft()
+
+drawTwoCircles()
+upAndLeft()
+
+drawTwoCircles()
+upAndLeft()
+
+drawTwoCircles()
+upAndLeft()
+drawTwoCircles()
+upAndLeft()
+
+drawTwoCircles()
+
+//draw trapezoid using circles
+turtle.penUp()
+turtle.setPosition(to: Point(x: 100, y: 400))
+turtle.penDown()
+drawTwoCircles()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 65, y: 400))
+turtle.penDown()
+drawTwoCircles()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 78, y: 420))
+turtle.penDown()
+drawTwoCircles()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 90, y: 440))
+turtle.penDown()
+drawTwoCircles()
 

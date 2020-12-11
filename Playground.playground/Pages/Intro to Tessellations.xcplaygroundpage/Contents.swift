@@ -53,7 +53,7 @@ func drawPolygon(withSides n: Int, withLength l: Int) {
 
 // Move out of the corner of the canvas
 turtle.penUp()
-turtle.setPosition(to: Point(x: 100, y: 200))
+turtle.setPosition(to: Point(x: 0, y: 25))
 turtle.penDown()
 
 
@@ -82,25 +82,85 @@ drawArrow()
 turtle.penUp()
 turtle.forward(steps: 150)
 turtle.penDown()
-turtle.drawSelf()
 drawArrow()
 
 turtle.penUp()
-turtle.right(by: 90)
 turtle.forward(steps: 150)
-turtle.left(by: 90)
 turtle.penDown()
 drawArrow()
 
-turtle.left(by: 180)
 turtle.penUp()
 turtle.forward(steps: 150)
 turtle.penDown()
-turtle.left(by: 180)
 drawArrow()
-turtle.drawSelf()
+
+//second line
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 175))
+turtle.penDown()
+
+drawArrow()
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+drawArrow()
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+drawArrow()
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+drawArrow()
+
+//third line
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 325))
+turtle.penDown()
+
+drawArrow()
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+drawArrow()
 
 
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+drawArrow()
+
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+drawArrow()
+
+//fourthline
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 475))
+turtle.penDown()
+
+drawArrow()
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+drawArrow()
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+drawArrow()
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+drawArrow()
 
 //height = 2 * triangle area / base
 //height = 2 * (106 * 106 / 2 = 5618) / (25 + 25 + 100 = 150)

@@ -73,9 +73,39 @@ func drawArrow() {
     turtle.left(by: 90)
     turtle.forward(steps: 100)
     turtle.left(by: 90)
-    turtle.drawSelf()
     
 }
 
-canvas.highPerformance = false
 drawArrow()
+
+
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+turtle.drawSelf()
+drawArrow()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 150)
+turtle.left(by: 90)
+turtle.penDown()
+drawArrow()
+
+turtle.left(by: 180)
+turtle.penUp()
+turtle.forward(steps: 150)
+turtle.penDown()
+turtle.left(by: 180)
+drawArrow()
+turtle.drawSelf()
+
+
+
+//height = 2 * triangle area / base
+//height = 2 * (106 * 106 / 2 = 5618) / (25 + 25 + 100 = 150)
+//height = 2 * 5618 / 150 = 75
+//75 + 75 = 150
+
+
+canvas.highPerformance = false

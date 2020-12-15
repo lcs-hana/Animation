@@ -90,6 +90,7 @@ func drawSquareish2() {
     turtle.forward(steps: 15)
 }
 
+// first row
 drawSquareish1()
 
 turtle.penUp()
@@ -164,13 +165,301 @@ turtle.penDown()
 turtle.right(by: 90)
 turtle.drawSelf()
 
+//seecond row
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
 drawSquareish1()
 
 
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 280))
+turtle.penDown()
+turtle.right(by: 90)
+turtle.drawSelf()
 
+//third row
 
+drawSquareish1()
 
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
 
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 170))
+turtle.penDown()
+turtle.right(by: 90)
+turtle.drawSelf()
+
+//forth row
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.setPosition(to: Point(x: 0, y: 60))
+turtle.penDown()
+turtle.right(by: 90)
+turtle.drawSelf()
+
+//fifth row
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 40)
+turtle.penDown()
+turtle.left(by: 90)
+
+drawSquareish2()
+
+turtle.penUp()
+turtle.right(by: 90)
+turtle.forward(steps: 75)
+turtle.right(by: 90)
+turtle.forward(steps: 15)
+turtle.right(by: 180)
+turtle.forward(steps: 55)
+turtle.penDown()
+turtle.right(by: 90)
+
+drawSquareish1()
 
 
 canvas.highPerformance = false
